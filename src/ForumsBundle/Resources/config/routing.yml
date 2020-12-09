@@ -1,0 +1,9 @@
+forums_homepage:
+    path:     /forums
+    defaults: { _controller: ForumsBundle:Default:index }
+forums_listpage:
+        path:     /list
+        defaults: { _controller: ForumsBundle:Default:list }
+forums_commentpage:
+    path:     /comment
+    defaults: { _controller: ForumsBundle:Default:comment }

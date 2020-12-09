@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+    <br>
+
+    <!-- Services Element -->
+    <section class="section-padding">
+        <!-- line modal -->
+        <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <h3 class="modal-title" id="lineModalLabel">My Modal</h3>
+                    </div>
+                    <div class="modal-body">
+                        <!-- content goes here -->
+                        <form action="" method="POST">
+                            <div class="form-group">
+                                <label for="title">Titre <span class="require">*</span></label>
+                                <input type="text" class="form-control" name="title" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Description <span class="require">*</span></label>
+                                <textarea rows="5" class="form-control" name="description" ></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="categorie">Categories<span class="require">*</span></label>
+                                <select name="categorie">
+
+                                    <option>Categorie 1</option>
+                                    <option>Categorie 2</option>
+                                    <option>Categorie 3</option>
+
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                Partager
+                            </button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default" data-dismiss="modal"  role="button">Close</button>
+                            </div>
+                            <div class="btn-group btn-delete hidden" role="group">
+                                <button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal"  role="button">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center" align="center"><button data-toggle="modal"
+                                                   data-target="#squarespaceModal"
+                                                   class="btn-default btn-big btn-fill">Ajouter</button></div>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wrapper-left">
+                    <div class="card-category">
+                        <div class="card-header">
+                            <div class="bars-menu">
+                                <span class="bar bar-f"></span>
+                                <span class="bar bar-s"></span>
+                                <span class="bar bar-t"></span>
+                            </div>
+                            <a href="list">
+                                <h1 class="card-title">CATEGORIE 1</h1>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <ul class="menu-cat">
+                                <li>
+                                    <a href="">
+                                        Top 1
+                                    </a>
+                                    <p class="news-meta" align="right">
+                                        <span>November 7, 2017</span>
+                                        <span><i class="ti-eye"></i> 1046</span>
+                                        <span><i class="ti-comment"></i> 20</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Top 2
+                                    </a>
+                                    <p class="news-meta" align="right">
+                                        <span>September 23, 2017</span>
+                                        <span><i class="ti-eye"></i> 3153</span>
+                                        <span><i class="ti-comment"></i> 33</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Top 3
+                                    </a>
+                                    <p class="news-meta" align="right">
+                                        <span>February 25, 2017</span>
+                                        <span><i class="ti-eye"></i> 6370</span>
+                                        <span><i class="ti-comment"></i> 57</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
